@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <form action="/auth/register" method="post">
+    <div>
+      <label for="email">Email/Username</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        value="<%= locals.email ? email : '' %>"
+      />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+    </div>
+    <div>
+      <label for="password2">Confirm password</label>
+      <input type="password" name="password2" id="password2" />
+    </div>
+    <div>
+      <input type="submit" value="Register" />
+    </div>
+  </form>
+  <div>
+    <p>
+      Already have an account? <span><a href="/user/profile">Login</a></span>
+    </p>
+  </div>
+</body>
+</html>

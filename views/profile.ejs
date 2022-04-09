@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+</head>
+<body>
+  <div>
+    <div>
+      <p>ID : <%= person.id %></p>
+    </div>
+    <div>
+      <p>Email/username : <%= person.email %></p>
+    </div>
+    <div>
+      <p>Role : <%= person.role %></p>
+    </div>
+    <div>
+      <p>User object : </p>
+      <pre><%= person %></pre>
+    </div>
+    <a href="/auth/logout">LOGOUT</a>
+    <br>
+    <a href="/admin/users">ALL USERS(only for admin)</a>
+  </div>
+</body>
+</html>
